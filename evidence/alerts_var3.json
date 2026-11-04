@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2026-11-04 14:31:07",
+    "category": "Malformed Protocol Field",
+    "src_ip": "172.18.0.1",
+    "dst_ip": "172.18.0.2",
+    "detail": "Location/description field exceeds 128 chars (possible overflow/injection attempt)"
+  }
+]

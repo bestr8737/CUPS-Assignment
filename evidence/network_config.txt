@@ -1,0 +1,16 @@
+=== docker inspect (network) ===
+net=cve-2024-47177_default ip=172.18.0.2 id=d3d338b03d4734ff64447b6276964f511ec644a3de4797cc228ec5b697ee166b
+
+=== listening ports (631) ===
+udp   UNCONN 0      0             0.0.0.0:631        0.0.0.0:*          
+udp   UNCONN 0      0                [::]:631           [::]:*          
+tcp   LISTEN 0      4096          0.0.0.0:631        0.0.0.0:*          
+tcp   LISTEN 0      4096             [::]:631           [::]:*          
+
+=== after fix: listening ports (631), localhost-only ===
+udp   UNCONN 0      0           127.0.0.1:631        0.0.0.0:*          
+tcp   LISTEN 0      4096        127.0.0.1:631        0.0.0.0:*          
+net=cve-2024-47177_default ip=172.18.0.2 id=2b526f44cc148758924f4e61668e835a3f773580dc7e4c737be3b5cefe82fba3
+net=cve-2024-47177_default ip=invalid IP id=dbade18eec641b798074ab3848690fc0681c5f0a154625a41e347c83cc81ca00
+=== current bridge interface: br-dbade18eec64 ===
+net=cve-2024-47177_default ip=172.18.0.2 id=dbade18eec641b798074ab3848690fc0681c5f0a154625a41e347c83cc81ca00

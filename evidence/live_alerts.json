@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-11-04 14:33:15",
+    "category": "Malformed Protocol Field",
+    "src_ip": "172.18.0.1",
+    "dst_ip": "172.18.0.2",
+    "detail": "Unexpected type-flags value '7' (expected one of ['0', '1', '2', '3', '4'])"
+  },
+  {
+    "timestamp": "2026-11-04 14:33:15",
+    "category": "Suspicious IPP Connection",
+    "src_ip": "172.18.0.2",
+    "dst_ip": "172.18.0.1",
+    "detail": "TCP SYN to IPP-like port 8631 from non-allowlisted source"
+  }
+]

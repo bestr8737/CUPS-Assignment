@@ -1,0 +1,4 @@
+Removing stale PID file /var/run/dbus/pid..
+Starting system message bus: dbus.
+NAME                    IMAGE                       COMMAND                  SERVICE   CREATED        STATUS                     PORTS
+cve-2024-47177-cups-1   vulhub/cups-browsed:2.0.1   "bash /docker-entryp…"   cups      21 hours ago   Exited (0) 2 minutes ago   

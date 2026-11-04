@@ -46,7 +46,7 @@ Find your Docker bridge interface with `ip link show | grep br-`. Key options:
 python3 cups_detector.py -r pcap_files/attack_run.pcap -o evidence/alerts.json
 
 # Live monitoring
-sudo python3 cups_detector.py -i <BRIDGE_INTERFACE> --timeout 30 -o evidence/live_alerts.csv
+sudo python3 cups_detector.py -i <BRIDGE_INTERFACE> --timeout 30 -o evidence/live_alerts.json
 ```
 
 Alerts are exported to CSV or JSON based on the `-o` file extension. Use `--allow <IP>` to add additional trusted printer IPs to the allowlist.

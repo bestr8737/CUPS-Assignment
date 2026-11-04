@@ -1,25 +1,4 @@
 #!/usr/bin/env python3
-"""
-cups_detector.py — Scapy-based CUPS attack detection tool.
-
-Monitors CUPS legacy-browsing traffic (UDP 631) and related IPP connection
-activity (TCP 631/other IPP ports), either live or from a saved PCAP, and
-flags four categories of suspicious activity:
-
-  1. Unauthorized printer advertisements  — ads from sources not on an
-     allowlist of known-good printer IPs.
-  2. Suspicious IPP connections           — TCP SYNs to unexpected/ephemeral
-     ports following a discovery advertisement.
-  3. Repeated / abnormal discovery rates  — too many advertisements from one
-     source within a time window (flood/spam behavior).
-  4. Malformed protocol fields            — payloads that don't match the
-     expected "<flags> <state> <url> "<loc>" "<desc>"" structure, or whose
-     fields are implausible (bad flags value, oversized strings, etc).
-
-Supports live monitoring or offline PCAP analysis, and exports all alerts to
-CSV or JSON.
-"""
-
 import argparse
 import csv
 import json

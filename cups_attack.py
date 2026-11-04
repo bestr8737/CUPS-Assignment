@@ -1,16 +1,4 @@
 #!/usr/bin/env python3
-"""
-cups_attack.py — Scapy-based CUPS insecure printer-discovery exploration tool.
-
-Investigates the trust-boundary flaw in cups-browsed's legacy CUPS browsing
-protocol (related to CVE-2024-47176/47177 family) by crafting and sending
-printer-advertisement packets over UDP 631, and optionally observing whether
-the victim initiates a callback connection to the advertised printer URL.
-
-For authorized lab use only. Do not target systems you do not own or have
-explicit permission to test.
-"""
-
 import argparse
 import logging
 import sys
